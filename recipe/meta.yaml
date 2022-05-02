@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vvv"
 
 requirements:
@@ -23,7 +23,7 @@ requirements:
   run:
     - python >=3.8
     - tomli
-    - conjure-python-client
+    - conjure-python-client >=2.1.0,<3
 
 test:
   imports:
