@@ -1,5 +1,5 @@
 {% set name = "palantir-sdk" %}
-{% set version = "0.8.0" %}
+{% set version = "0.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6652b20d0e35f53942c63a2dc5699603cc09f84eef20691d628cc22bdb0efcb1
+  sha256: 97f854f4c16be4eb7d8fa91208b651c11e704452643782b558d8df7c409640c6
 
 build:
   noarch: python
-  number: 1
-  script: "{{ PYTHON }} -m pip install . -vvv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vvv
 
 requirements:
   host:
@@ -34,7 +34,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'Palantir Python SDK'
+  summary: Palantir Python SDK
 
 extra:
   recipe-maintainers:
