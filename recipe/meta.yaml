@@ -1,5 +1,5 @@
 {% set name = "palantir-sdk" %}
-{% set version = "0.11.0" %}
+{% set version = "0.12.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 72b75854e66ca4e8cebcdb22b8c2d3ab7afd21423c03e811bf2a9ce0a5ec76b1
+  sha256: 0ba11a7c7b4bf69074a52a57d3b23b077089f1d55699d09b125905b8ba6e547f
 
 build:
   noarch: python
