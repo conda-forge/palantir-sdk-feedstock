@@ -1,11 +1,11 @@
-About palantir-sdk
-==================
+About palantir-sdk-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/palantir-sdk-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.org/project/palantir-sdk/
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/palantir-sdk-feedstock/blob/main/LICENSE.txt)
 
 Summary: Palantir Python SDK
 
