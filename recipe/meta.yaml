@@ -6,26 +6,28 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: 72b75854e66ca4e8cebcdb22b8c2d3ab7afd21423c03e811bf2a9ce0a5ec76b1
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vvv
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - poetry
 
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - tomli
     - conjure-python-client >=2.1.0,<3
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - palantir
 
